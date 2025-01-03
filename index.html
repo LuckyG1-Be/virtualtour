@@ -73,9 +73,14 @@
             const player = TDV.PlayerAPI.create(settings);
 
             player.bind('stateChange', function(event) {
-                if (event.name === 'begin') {
+                if (event.name === 'begin' || event.name === 'ready') {
                     preloadContainer.style.display = 'none';
                 }
+            });
+
+            player.bind('error', function(error) {
+                console.error('Player Error:', error);
+                document.getElementById('preloadText').innerText = 'Error loading tour: ' + error.message;
             });
         }
     </script>

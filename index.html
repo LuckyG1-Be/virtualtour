@@ -24,9 +24,9 @@
     <meta property="og:image:height" content="630"/>
 
     <!-- JavaScript and Player Dependencies -->
-    <script src="lib/tdvplayer.js"></script>
-    <script src="script.js"></script>
-    <script src="lib/ThreeWebGL.js"></script>
+    <script src="./lib/tdvplayer.js"></script>
+    <script src="./lib/ThreeWebGL.js"></script>
+    <script src="./script.js"></script>
 
     <style type="text/css">
         html, body {
@@ -46,26 +46,33 @@
         }
         #preloadContainer {
             z-index: 2;
-            position: relative;
+            position: absolute;
             width: 100%;
             height: 100%;
-            transition: opacity 1s;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(0, 51, 51, 1);
+        }
+        #preloadText {
+            color: #777777;
+            font-size: 14px;
+            font-family: Arial, Helvetica, sans-serif;
         }
     </style>
 
     <script type="text/javascript">
         function onLoad() {
-            var preloadContainer = document.getElementById('preloadContainer');
-            preloadContainer.style.opacity = 1;
+            const preloadContainer = document.getElementById('preloadContainer');
 
-            var settings = new TDV.PlayerSettings();
+            const settings = new TDV.PlayerSettings();
             settings.set(TDV.PlayerSettings.CONTAINER, document.getElementById('viewer'));
             settings.set(TDV.PlayerSettings.SCRIPT_URL, './script.js');
             settings.set(TDV.PlayerSettings.THREE_JS_WEBGL_URL, './lib/ThreeWebGL.js');
 
-            window.tdvplayer = TDV.PlayerAPI.create(settings);
+            const player = TDV.PlayerAPI.create(settings);
 
-            tdvplayer.bind('stateChange', function (event) {
+            player.bind('stateChange', function(event) {
                 if (event.name === 'begin') {
                     preloadContainer.style.display = 'none';
                 }
@@ -75,11 +82,7 @@
 </head>
 <body onload="onLoad()">
     <div id="preloadContainer">
-        <div style="z-index: 4; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);">
-            <span style="color: #777777; font-size: 14px; font-family: Arial, Helvetica, sans-serif;">
-                Loading virtual tour. Please wait...
-            </span>
-        </div>
+        <span id="preloadText">Loading virtual tour. Please wait...</span>
     </div>
     <div id="viewer"></div>
 </body>

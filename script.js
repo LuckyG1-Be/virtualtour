@@ -509,11 +509,9 @@ TDV.PlayerAPI.defineScript({ "definitions": [
   "viewerArea": "this.MainViewer"
  },
  {
-HEAD
   "id": "playList_3B2EF06B_28BD_F41D_41B1_0CB5C6EF840F",
 
   "id": "playList_39AA8D98_287E_ED64_41C1_B7F4EEFA3A6D",
-2b45798e6425615698d7e94801da69ea313ce504
   "class": "PlayList",
   "items": [
    {
@@ -521,11 +519,9 @@ HEAD
     "media": "this.video_3921DF07_287F_EC1C_41A9_4117C01F5372",
     "player": "this.MainViewerVideoPlayer",
     "class": "VideoPlayListItem",
-HEAD
     "start": "this.MainViewerVideoPlayer.set('displayPlaybackBar', true); this.changeBackgroundWhilePlay(this.playList_3B2EF06B_28BD_F41D_41B1_0CB5C6EF840F, 0, '#000000'); this.pauseGlobalAudiosWhilePlayItem(this.playList_3B2EF06B_28BD_F41D_41B1_0CB5C6EF840F, 0, this.video_3921DF07_287F_EC1C_41A9_4117C01F5372)"
 
     "start": "this.MainViewerVideoPlayer.set('displayPlaybackBar', true); this.changeBackgroundWhilePlay(this.playList_39AA8D98_287E_ED64_41C1_B7F4EEFA3A6D, 0, '#000000'); this.pauseGlobalAudiosWhilePlayItem(this.playList_39AA8D98_287E_ED64_41C1_B7F4EEFA3A6D, 0, this.video_3921DF07_287F_EC1C_41A9_4117C01F5372)"
-2b45798e6425615698d7e94801da69ea313ce504
    }
   ]
  },
@@ -546,11 +542,9 @@ HEAD
   "thumbnailUrl": "media/video_38171544_287A_5C15_41C2_90FBB46C772D_t.jpg"
  },
  {
-HEAD
   "id": "playList_3AF7206C_28BD_F41B_41B7_F7017493D1AA",
 
   "id": "playList_39A95D98_287E_ED64_41A9_6C6DCB9AE81F",
-2b45798e6425615698d7e94801da69ea313ce504
   "class": "PlayList",
   "items": [
    {
@@ -558,11 +552,9 @@ HEAD
     "media": "this.video_38171544_287A_5C15_41C2_90FBB46C772D",
     "player": "this.MainViewerVideoPlayer",
     "class": "VideoPlayListItem",
-HEAD
     "start": "this.MainViewerVideoPlayer.set('displayPlaybackBar', true); this.changeBackgroundWhilePlay(this.playList_3AF7206C_28BD_F41B_41B7_F7017493D1AA, 0, '#000000'); this.pauseGlobalAudiosWhilePlayItem(this.playList_3AF7206C_28BD_F41B_41B7_F7017493D1AA, 0, this.video_38171544_287A_5C15_41C2_90FBB46C772D)"
 
     "start": "this.MainViewerVideoPlayer.set('displayPlaybackBar', true); this.changeBackgroundWhilePlay(this.playList_39A95D98_287E_ED64_41A9_6C6DCB9AE81F, 0, '#000000'); this.pauseGlobalAudiosWhilePlayItem(this.playList_39A95D98_287E_ED64_41A9_6C6DCB9AE81F, 0, this.video_38171544_287A_5C15_41C2_90FBB46C772D)"
-2b45798e6425615698d7e94801da69ea313ce504
    }
   ]
  }
@@ -746,11 +738,9 @@ HEAD
  "borderSize": 0,
  "paddingLeft": 0,
  "width": "100%",
-HEAD
  "vrPolyfillScale": 1,
 
  "vrPolyfillScale": 0.5,
-2b45798e6425615698d7e94801da69ea313ce504
  "height": "100%",
  "minWidth": 20,
  "paddingRight": 0,

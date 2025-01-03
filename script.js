@@ -519,9 +519,9 @@ TDV.PlayerAPI.defineScript({ "definitions": [
     "media": "this.video_3921DF07_287F_EC1C_41A9_4117C01F5372",
     "player": "this.MainViewerVideoPlayer",
     "class": "VideoPlayListItem",
-    "start": "this.MainViewerVideoPlayer.set('displayPlaybackBar', true); this.changeBackgroundWhilePlay(this.playList_3B2EF06B_28BD_F41D_41B1_0CB5C6EF840F, 0, '#000000'); this.pauseGlobalAudiosWhilePlayItem(this.playList_3B2EF06B_28BD_F41D_41B1_0CB5C6EF840F, 0, this.video_3921DF07_287F_EC1C_41A9_4117C01F5372)"
+    "start": "this.MainViewerVideoPlayer.set('displayPlaybackBar', true); this.changeBackgroundWhilePlay(this.playList_3B2EF06B_28BD_F41D_41B1_0CB5C6EF840F, 0, '#000000'); this.pauseGlobalAudiosWhilePlayItem(this.playList_3B2EF06B_28BD_F41D_41B1_0CB5C6EF840F, 0, this.video_3921DF07_287F_EC1C_41A9_4117C01F5372)",
 
-    "start": "this.MainViewerVideoPlayer.set('displayPlaybackBar', true); this.changeBackgroundWhilePlay(this.playList_39AA8D98_287E_ED64_41C1_B7F4EEFA3A6D, 0, '#000000'); this.pauseGlobalAudiosWhilePlayItem(this.playList_39AA8D98_287E_ED64_41C1_B7F4EEFA3A6D, 0, this.video_3921DF07_287F_EC1C_41A9_4117C01F5372)"
+    "start": "this.MainViewerVideoPlayer.set('displayPlaybackBar', true); this.changeBackgroundWhilePlay(this.playList_39AA8D98_287E_ED64_41C1_B7F4EEFA3A6D, 0, '#000000'); this.pauseGlobalAudiosWhilePlayItem(this.playList_39AA8D98_287E_ED64_41C1_B7F4EEFA3A6D, 0, this.video_3921DF07_287F_EC1C_41A9_4117C01F5372)",
    }
   ]
  },
